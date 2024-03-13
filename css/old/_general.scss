@@ -1,0 +1,49 @@
+$boardWidth: 100%;
+$boardHeight: 100%;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+    position: fixed;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+body {
+	display: flex;
+	margin: 0;
+	background-color: #999999;
+}
+#all, #container, #background, #overlay, #canvas, #effects {
+    width:$boardWidth;
+    height:$boardHeight;
+    position: fixed;
+    top:0px;
+    left:0px;
+}
+#container {
+	line-height: 0;
+    z-index: 2;
+    position: absolute;
+}
+#background {
+    z-index: 1;
+    pointer-events: none;
+}
+#effects {
+    z-index: 3;
+    pointer-events: none;
+}
+#blurred-effects {
+    z-index: 2;
+    pointer-events: none;
+}
+#canvas {
+	overflow: hidden;
+    transform: translateY(0);
+    z-index: 4;
+}
+#overlay {
+    z-index: 5;
+    pointer-events: none;
+}

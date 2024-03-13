@@ -1,0 +1,138 @@
+#controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#controls .player {
+    pointer-events: all;
+    position: absolute;
+}
+
+#controls #player0 {
+    top:520px;
+    right: 80px;
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#controls #player1 {
+    bottom:520px;
+    left: 80px;
+}
+
+#controls .button {
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    right:2px;
+    overflow: hidden;
+    border-radius: 999px;
+    background-size: cover;
+    border: 2px solid black;
+    display: none;
+}
+#controls .active-player .button {
+    display: block;
+}
+#controls #player1 .button{
+    filter: invert(1);
+}
+#controls .disabled {
+    pointer-events: none;
+    opacity: .2;
+}
+
+#controls .button.active-mode {
+    background-color: #99999999;
+}
+
+#mode4-p0, #mode4-p1 {
+    top: 60px;
+    background-image: url("../img/fire.svg");
+}
+#mode3-p0, #mode3-p1 {
+    top: 130px;
+    background-image: url("../img/earth.svg");
+}
+#mode2-p0, #mode2-p1 {
+    top: 200px;
+    background-image: url("../img/water.svg");
+}
+#mode1-p0, #mode1-p1 {
+    top: 300px;
+    background-image: url("../img/driver.svg");
+}
+#mode0-p0, #mode0-p1 {
+    top: 370px;
+    background-image: url("../img/new.svg");
+}
+.done-button {
+    top: 440px;
+    background-image: url("../img/cycle.svg");
+}
+
+#player0 .text {
+    color: #000000;
+}
+#player1 .text {
+    color: #FFFFFF;
+}
+.player .score {
+    position: absolute;
+    background: #99999922;
+    top: -60px;
+    left: -55px;
+    font-size: 3em;
+    overflow: hidden;
+}
+.player .mana {
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+.message {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 0px;
+    font-size: 5em;
+    padding: 30px 40px 30px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    color: #000000;
+    background: #333333CC;
+    border: 3px solid #000000;
+    border-left: 0px;
+    white-space: nowrap;
+    display: none;
+}
+#player0 .message {
+    color: #FFFFFF;
+    background: #CCCCCCCC;
+    border: 3px solid #FFFFFF;
+    border-left: 0px;
+}
+.message.shown {
+    display: block;
+}
+
+#debug {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    background-color: #FFFFFF66;
+    padding: 5px;
+    font-size: 1.5em;
+    display: none;
+}

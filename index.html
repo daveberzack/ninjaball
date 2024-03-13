@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ninja Balls</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="game">
+      <canvas id="light" width="500" height="500"></canvas>
+      <canvas id="enemies" width="500" height="500"></canvas>
+      <canvas id="sight" width="500" height="500"></canvas>
+      <canvas id="effects" width="500" height="500"></canvas>
+      <canvas id="physics" width="500" height="500"></canvas>
+    </div>
+    <div id="goals">
+      <div id="completed">
+        <h3>Goal</h3>
+        <h2></h2>
+      </div>
+      <div id="strokes">
+        <h3>Strokes</h3>
+        <h2></h2>
+      </div>
+      <div id="speed">
+        <h3>Time</h3>
+        <h2></h2>
+      </div>
+      <div id="kills">
+        <h3>Kills</h3>
+        <h2></h2>
+      </div>
+      <div id="secret">
+        <h3>Secret</h3>
+        <h2></h2>
+      </div>
+    </div>
+    <button id="reset">reset</button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="js/deps/sight.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
